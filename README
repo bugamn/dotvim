@@ -1,0 +1,9 @@
+My personal VIm configuration, with plugins that I find useful to my needs.
+
+To the moment, I use:
+
+* latex-suite (with some modifications to avoid problems with latin characters)
+* NERDTree
+* NERDCommenter
+* tasklist
+* gnupg
