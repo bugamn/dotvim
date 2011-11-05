@@ -64,9 +64,9 @@ filetype indent on
 set iskeyword+=:
 let g:tex_flavor='latex'
 
-let g:Tex_ViewRule_dvi = 'evince'
-let g:Tex_ViewRule_ps = 'evince'
-let g:Tex_ViewRule_pdf = 'evince'
+let g:Tex_ViewRule_dvi = 'evince >/dev/null 2>&1'
+let g:Tex_ViewRule_ps = 'evince >/dev/null 2>&1'
+let g:Tex_ViewRule_pdf = 'evince >/dev/null 2>&1'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_MultipleCompileFormats = 'dvi,pdf'
 filetype plugin indent on
