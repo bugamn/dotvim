@@ -27,6 +27,7 @@ set showcmd	    	" mostra comando parcial
 set showmatch
 set nomodeline
 set t_Co=256
+colorscheme koehler
 
 set ofu=syntaxcomplete#Complete	"omnicompletion
 
@@ -73,9 +74,9 @@ filetype plugin indent on
 syntax on
 
 "ajuste para quando uso GUI
-if has('gui_running')
-	colorscheme murphy
-endif
+"if has('gui_running')
+	"colorscheme murphy
+"endif
 
 " verificação de sintaxe
 autocmd Filetype c nnoremap <buffer> <leader>ll :!gcc -fsyntax-only %<CR>
