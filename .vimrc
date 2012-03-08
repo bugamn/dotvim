@@ -29,24 +29,20 @@ set nomodeline
 set t_Co=256
 colorscheme koehler
 
-set ofu=syntaxcomplete#Complete	"omnicompletion
-
-"ajuste para comandos pessoais e de plugins
-"let mapleader = ","
-
 "austes de comandos
 map <space> <c-f>
 map <backspace> <c-b>
-"map <F10> <Esc>:setlocal spell spelllang=pt_br<CR>
-map <F10> <Esc>:setlocal spell spelllang=en_us<CR>
+map <F10> <Esc>:setlocal spell spelllang=pt_br<CR>
+"map <F10> <Esc>:setlocal spell spelllang=en_us<CR>
 map <F11> <Esc>:setlocal nospell<CR>
 
 imap jj <ESC>
 
-" vim-latex settings
-
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
+set ofu=syntaxcomplete#Complete	"omnicompletion
+
+" vim-latex settings
 
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a single file. This will confuse Latex-Suite. Set your grep
@@ -87,3 +83,6 @@ autocmd Filetype perl nnoremap <buffer> <leader>ll :!perl -c %<CR>
 
 " NERDTree
 map <F2> :NERDTreeToggle<CR>
+
+" TagBar
+nmap <F8> :TagBarToggle<CR>
