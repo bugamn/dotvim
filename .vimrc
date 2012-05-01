@@ -32,8 +32,8 @@ colorscheme koehler
 "austes de comandos
 map <space> <c-f>
 map <backspace> <c-b>
-map <F10> <Esc>:setlocal spell spelllang=pt_br<CR>
-"map <F10> <Esc>:setlocal spell spelllang=en_us<CR>
+"map <F10> <Esc>:setlocal spell spelllang=pt_br<CR>
+map <F10> <Esc>:setlocal spell spelllang=en_us<CR>
 map <F11> <Esc>:setlocal nospell<CR>
 
 imap jj <ESC>
@@ -85,4 +85,4 @@ autocmd Filetype perl nnoremap <buffer> <leader>ll :!perl -c %<CR>
 map <F2> :NERDTreeToggle<CR>
 
 " TagBar
-nmap <F8> :TagBarToggle<CR>
+nmap <F8> :TagbarToggle<CR>
