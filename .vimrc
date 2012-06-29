@@ -15,7 +15,7 @@ set background=dark
 set tabstop=4		" Espaços por tab
 set shiftwidth=4	" Espaços para cada passo de indent
 "set textwidth=79
-"set expandtab		" Substitui tab por espaços adequados
+set expandtab		" Substitui tab por espaços adequados
         			" Use CTRL-V <Tab> para colocar Tabs reais
 set smarttab		" usa shiftwidth no início, tabstop no meio
 	        		" <BS> apaga shiftwidth no início
@@ -86,3 +86,6 @@ map <F2> :NERDTreeToggle<CR>
 
 " TagBar
 nmap <F8> :TagbarToggle<CR>
+
+" LanguageTool
+let g:languagetool_jar='$HOME/.languagetool/LanguageTool.jar'
