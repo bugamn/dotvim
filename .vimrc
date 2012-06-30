@@ -1,3 +1,4 @@
+"autocmd! " clean autocommands - is this necessary?
 set nocp
 set mouse=a
 set foldmethod=indent
@@ -15,8 +16,11 @@ set background=dark
 set tabstop=4		" Espaços por tab
 set shiftwidth=4	" Espaços para cada passo de indent
 "set textwidth=79
+
+"fazer como if
 set expandtab		" Substitui tab por espaços adequados
         			" Use CTRL-V <Tab> para colocar Tabs reais
+autocmd Filetype make set noexpandtab
 set smarttab		" usa shiftwidth no início, tabstop no meio
 	        		" <BS> apaga shiftwidth no início
 set hlsearch
