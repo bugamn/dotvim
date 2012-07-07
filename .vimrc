@@ -15,6 +15,7 @@ set backspace=2
 set background=dark
 set tabstop=4		" Espaços por tab
 set shiftwidth=4	" Espaços para cada passo de indent
+set softtabstop=4
 "set textwidth=79
 
 "fazer como if
