@@ -2,8 +2,13 @@ My personal VIm configuration, with plugins that I find useful to my needs.
 
 To the moment, I use:
 
-* latex-suite (with some modifications to avoid problems with latin characters)
+* latex-suite (with some modifications to avoid problems with latin characters) - might cut this one off.
 * NERDTree
 * NERDCommenter
 * tasklist
 * gnupg
+* snipMate
+* python updated syntax file
+* tagbar
+* LanguageTool
+* surround
