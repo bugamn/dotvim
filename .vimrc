@@ -5,16 +5,22 @@ set nocompatible
 " set a sane environment
 set mouse=a
 set backspace=2
+set scrolloff=3
+set nomodeline " security!
 
 " interface
 syntax enable
 set background=dark
 set ruler
-set number
+set relativenumber
 set title
+set cursorline
+set ttyfast
+set laststatus=2
 
 set foldmethod=indent
 set autoindent
+set shiftround
 
 " autocomplete options
 set wildmenu
@@ -38,9 +44,21 @@ set ignorecase
 set smartcase
 set showcmd	    	" shows partial command
 set showmatch
-set nomodeline
+set gdefault
+
+" color
 set t_Co=256
 colorscheme koehler
+
+" buffers
+set hidden
+
+" undofile
+set undofile
+
+" show whitespace
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " personal commands
 map <space> <c-f>
@@ -85,6 +103,9 @@ syntax on
 "if has('gui_running')
 	"colorscheme murphy
 "endif
+
+" save on exit
+autocmd FocusLost * :wa
 
 " verificação de sintaxe
 autocmd Filetype c nnoremap <buffer> <leader>ll :!gcc -fsyntax-only %<CR>
