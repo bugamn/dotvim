@@ -1,40 +1,66 @@
 "autocmd! " clean autocommands - is this necessary?
-set nocp
+" break compability with vi - vi-compability isn't needed
+set nocompatible
+
+" set a sane environment
 set mouse=a
+set backspace=2
+set scrolloff=3
+set nomodeline " security!
+
+" interface
+syntax enable
+set background=dark
+set ruler
+set relativenumber
+set title
+set cursorline
+set ttyfast
+set laststatus=2
+
 set foldmethod=indent
 set autoindent
-"opções do autocompletar
+set shiftround
+
+" autocomplete options
 set wildmenu
 set wildmode=list:longest,full
-"interface
-syntax enable
-set ruler
-set number
-set title
-set backspace=2
-set background=dark
-set tabstop=4		" Espaços por tab
-set shiftwidth=4	" Espaços para cada passo de indent
-set softtabstop=4
-"set textwidth=79
 
-"fazer como if
-set expandtab		" Substitui tab por espaços adequados
-        			" Use CTRL-V <Tab> para colocar Tabs reais
+" tabs aren't all that necessary
+set tabstop=4		" Espaces for tab
+set shiftwidth=4	" Espaces for each indent
+set softtabstop=4
+" TODO function to exchange tabs for spaces
+set expandtab		" Substutes tab for spaces
+        			" Use CTRL-V <Tab> to put real Tabs
 autocmd Filetype make set noexpandtab
-set smarttab		" usa shiftwidth no início, tabstop no meio
-	        		" <BS> apaga shiftwidth no início
+set smarttab		" use shiftwidth at beginning, tabstop in middle
+	        		" <BS> erases shiftwidth at start
+
+" Search options
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set showcmd	    	" mostra comando parcial
+set showcmd	    	" shows partial command
 set showmatch
-set nomodeline
+set gdefault
+
+" color
 set t_Co=256
 colorscheme koehler
 
-"austes de comandos
+" buffers
+set hidden
+
+" undofile
+set undofile
+
+" show whitespace
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
+
+" personal commands
 map <space> <c-f>
 map <backspace> <c-b>
 "map <F10> <Esc>:setlocal spell spelllang=pt_br<CR>
@@ -57,9 +83,6 @@ set grepprg=grep\ -nH\ $*
 call pathogen#infect()
 call pathogen#helptags()
 
-" OPTIONAL: this enables automatc indentation as you type.
-filetype indent on
-
 " TIP: if you write your \label's as \label{fig:something}, then if you
 " type in \ref{fig: and press <C-n> you will automatically cycle through
 " all the figure labels. Very useful!
@@ -71,6 +94,8 @@ let g:Tex_ViewRule_ps = 'evince >/dev/null 2>&1'
 let g:Tex_ViewRule_pdf = 'evince >/dev/null 2>&1'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_MultipleCompileFormats = 'dvi,pdf'
+
+" OPTIONAL: this enables automatic indentation as you type.
 filetype plugin indent on
 syntax on
 
@@ -78,6 +103,9 @@ syntax on
 "if has('gui_running')
 	"colorscheme murphy
 "endif
+
+" save on exit
+autocmd FocusLost * :wa
 
 " verificação de sintaxe
 autocmd Filetype c nnoremap <buffer> <leader>ll :!gcc -fsyntax-only %<CR>
