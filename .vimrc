@@ -120,5 +120,12 @@ map <F2> :NERDTreeToggle<CR>
 " TagBar
 nmap <F8> :TagbarToggle<CR>
 
+" Rainbow Parenthsis
+if exists("g:btm_rainbow_color") && g:btm_rainbow_color
+    call rainbow_parenthsis#LoadSquare ()
+    call rainbow_parenthsis#LoadRound ()
+    call rainbow_parenthsis#Activate ()
+endif
+
 " LanguageTool
 let g:languagetool_jar='$HOME/.languagetool/LanguageTool.jar'
