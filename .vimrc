@@ -33,7 +33,7 @@ set softtabstop=4
 " TODO function to exchange tabs for spaces
 set expandtab		" Substutes tab for spaces
         			" Use CTRL-V <Tab> to put real Tabs
-autocmd Filetype make set noexpandtab
+autocmd Filetype make setlocal noexpandtab
 set smarttab		" use shiftwidth at beginning, tabstop in middle
 	        		" <BS> erases shiftwidth at start
 
@@ -83,18 +83,6 @@ set grepprg=grep\ -nH\ $*
 call pathogen#infect()
 call pathogen#helptags()
 
-" TIP: if you write your \label's as \label{fig:something}, then if you
-" type in \ref{fig: and press <C-n> you will automatically cycle through
-" all the figure labels. Very useful!
-set iskeyword+=:
-let g:tex_flavor='latex'
-
-let g:Tex_ViewRule_dvi = 'evince >/dev/null 2>&1'
-let g:Tex_ViewRule_ps = 'evince >/dev/null 2>&1'
-let g:Tex_ViewRule_pdf = 'evince >/dev/null 2>&1'
-let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_MultipleCompileFormats = 'dvi,pdf'
-
 " OPTIONAL: this enables automatic indentation as you type.
 filetype plugin indent on
 syntax on
@@ -129,3 +117,6 @@ endif
 
 " LanguageTool
 let g:languagetool_jar='$HOME/.languagetool/LanguageTool.jar'
+
+" Gundo
+nnoremap <F5> :GundoToggle<CR>
