@@ -22,6 +22,9 @@ set foldmethod=indent
 set autoindent
 set shiftround
 
+" buffers
+set switchbuf=useopen,split
+
 " autocomplete options
 set wildmenu
 set wildmode=list:longest,full
@@ -91,6 +94,9 @@ syntax on
 "if has('gui_running')
 	"colorscheme murphy
 "endif
+
+" latex filetype fix
+let g:tex_flavor = "latex"
 
 " save on exit
 autocmd FocusLost * :wa

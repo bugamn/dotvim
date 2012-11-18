@@ -113,9 +113,52 @@ snippet section
 	${1:Section}~\ref{${2:sec:}}${3}
 snippet page
 	${1:page}~\pageref{${2}}${3}
+
+### My configurations
+snippet use
+	\usepackage{${1}}
+
+snippet Use
+	\usepackage[${2}]{${1}}
+
 # Beamer
 snippet frame
 	\begin{frame}
 		\frametitle{${1}}
 		${2}
 	\end{frame}
+
+#### Templates
+
+# default configuration
+snippet default
+	\usepackage[brazil]{babel}
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+	\usepackage{lmodern}
+
+# Article
+snippet article
+	\documentclass{article}
+
+	\title{${1}}
+	\author{${2}}
+	\date{${3}}
+
+	\begin{document}
+	${4}
+	\end{document}
+
+snippet beamer
+	\documentclass{beamer}
+	\usetheme{${1:Warsaw}}
+	\usecolortheme{${2:whale}}
+
+	\title{${3}}
+	\author{${4}}
+	\date{${5}}
+
+	\begin{document}
+	\titlepage
+	${6}
+	\end{document}
