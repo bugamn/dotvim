@@ -121,6 +121,16 @@ snippet use
 snippet Use
 	\usepackage[${2}]{${1}}
 
+snippet Table
+	\begin{table}[${1:htbp}]
+		\centering
+		\begin{tabular}{${2:|l|}}
+			${5}
+		\end{tabular}
+		\caption{${3}}
+		\label{${4}}
+	\end{table}
+
 # Beamer
 snippet frame
 	\begin{frame}
