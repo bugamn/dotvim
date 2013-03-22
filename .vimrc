@@ -83,6 +83,11 @@ set ofu=syntaxcomplete#Complete	"omnicompletion
 " program to always generate a file-name.
 set grepprg=grep\ -nH\ $*
 
+" CamelCaseMove
+map \w <Plug>CamelCaseMotion_w
+map \e <Plug>CamelCaseMotion_e
+map \b <Plug>CamelCaseMotion_b
+
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -126,3 +131,4 @@ let g:languagetool_jar='$HOME/.languagetool/LanguageTool.jar'
 
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
+
