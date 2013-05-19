@@ -64,6 +64,7 @@ set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " personal commands
+map Y y$
 map <space> <c-f>
 map <backspace> <c-b>
 "map <F10> <Esc>:setlocal spell spelllang=pt_br<CR>
