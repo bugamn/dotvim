@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/snipMate"]
 	path = .vim/bundle/snipMate
 	url = git://github.com/garbas/vim-snipmate.git
+[submodule ".vim/bundle/tagber"]
+	path = .vim/bundle/tagber
+	url = git://github.com/majutsushi/tagbar.git
