@@ -1,0 +1,3 @@
+[submodule ".vim/bundle/splice"]
+	path = .vim/bundle/splice
+	url = git://github.com/sjl/splice.vim.git
