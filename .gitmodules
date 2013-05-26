@@ -1,3 +1,6 @@
 [submodule ".vim/bundle/splice"]
 	path = .vim/bundle/splice
 	url = git://github.com/sjl/splice.vim.git
+[submodule ".vim/bundle/python-syntax"]
+	path = .vim/bundle/python-syntax
+	url = git://github.com/hdima/python-syntax.git
