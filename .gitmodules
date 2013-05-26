@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/matrix"]
 	path = .vim/bundle/matrix
 	url = git://github.com/uguu-org/vim-matrix-screensaver.git
+[submodule ".vim/bundle/LanguageTool"]
+	path = .vim/bundle/LanguageTool
+	url = git://github.com/vim-scripts/LanguageTool.git
