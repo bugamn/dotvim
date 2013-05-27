@@ -1,0 +1,42 @@
+[submodule ".vim/bundle/splice"]
+	path = .vim/bundle/splice
+	url = git://github.com/sjl/splice.vim.git
+[submodule ".vim/bundle/python-syntax"]
+	path = .vim/bundle/python-syntax
+	url = git://github.com/hdima/python-syntax.git
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/camelcasemotion"]
+	path = .vim/bundle/camelcasemotion
+	url = git://github.com/bkad/CamelCaseMotion.git
+[submodule ".vim/bundle/gnupg"]
+	path = .vim/bundle/gnupg
+	url = git://github.com/jamessan/vim-gnupg.git
+[submodule ".vim/bundle/gundo"]
+	path = .vim/bundle/gundo
+	url = git://github.com/sjl/gundo.vim.git
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/latexBox"]
+	path = .vim/bundle/latexBox
+	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
+[submodule ".vim/bundle/snipMate"]
+	path = .vim/bundle/snipMate
+	url = git://github.com/garbas/vim-snipmate.git
+[submodule ".vim/bundle/addon-mw"]
+	path = .vim/bundle/addon-mw
+	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule ".vim/bundle/tlib"]
+	path = .vim/bundle/tlib
+	url = git://github.com/tomtom/tlib_vim.git
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+	url = git://github.com/honza/vim-snippets.git
+[submodule ".vim/bundle/matrix"]
+	path = .vim/bundle/matrix
+	url = git://github.com/uguu-org/vim-matrix-screensaver.git
+[submodule ".vim/bundle/LanguageTool"]
+	path = .vim/bundle/LanguageTool
+	url = git://github.com/vim-scripts/LanguageTool.git

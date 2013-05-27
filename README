@@ -1,13 +1,3 @@
 My personal VIm configuration, with plugins that I find useful to my needs.
 
-To the moment, I use:
-
-* NERDTree
-* NERDCommenter
-* tasklist
-* gnupg
-* snipMate
-* python updated syntax file
-* tagbar
-* LanguageTool
-* surround
+I have changed the struture to use submodules so I can keep plugins updated easily.
