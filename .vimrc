@@ -114,9 +114,6 @@ autocmd Filetype perl nnoremap <buffer> <leader>ll :!perl -c %<CR>
 " tipo por pasta
 "autocmd BufRead,BufNewFile ~/.remind/* set syntax=remind
 
-" NERDTree
-map <F2> :NERDTreeToggle<CR>
-
 " TagBar
 nmap <F8> :TagbarToggle<CR>
 
