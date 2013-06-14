@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/LanguageTool"]
 	path = .vim/bundle/LanguageTool
 	url = git://github.com/vim-scripts/LanguageTool.git
+[submodule ".vim/bundle/recover"]
+	path = .vim/bundle/recover
+	url = git://github.com/chrisbra/Recover.vim.git
