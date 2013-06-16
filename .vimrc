@@ -77,29 +77,22 @@ imap jj <ESC>
 filetype plugin on
 set ofu=syntaxcomplete#Complete	"omnicompletion
 
-" vim-latex settings
-
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a single file. This will confuse Latex-Suite. Set your grep
 " program to always generate a file-name.
 set grepprg=grep\ -nH\ $*
+
+call pathogen#infect()
+call pathogen#helptags()
 
 " CamelCaseMove
 map \w <Plug>CamelCaseMotion_w
 map \e <Plug>CamelCaseMotion_e
 map \b <Plug>CamelCaseMotion_b
 
-call pathogen#infect()
-call pathogen#helptags()
-
 " OPTIONAL: this enables automatic indentation as you type.
 filetype plugin indent on
 syntax on
-
-"ajuste para quando uso GUI
-"if has('gui_running')
-	"colorscheme murphy
-"endif
 
 " latex filetype fix
 let g:tex_flavor = "latex"
@@ -116,16 +109,6 @@ autocmd Filetype perl nnoremap <buffer> <leader>ll :!perl -c %<CR>
 
 " NERDTree
 map <F2> :NERDTreeToggle<CR>
-
-" TagBar
-nmap <F8> :TagbarToggle<CR>
-
-" Rainbow Parenthsis
-if exists("g:btm_rainbow_color") && g:btm_rainbow_color
-    call rainbow_parenthsis#LoadSquare ()
-    call rainbow_parenthsis#LoadRound ()
-    call rainbow_parenthsis#Activate ()
-endif
 
 " LanguageTool
 let g:languagetool_jar='$HOME/.languagetool/LanguageTool.jar'
