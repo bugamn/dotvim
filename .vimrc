@@ -107,6 +107,7 @@ autocmd Filetype perl nnoremap <buffer> <leader>ll :!perl -c %<CR>
 
 " filetype
 autocmd BufRead,BufNewFile bash-fc-* set filetype=sh
+autocmd BufRead,BufNewFile .bash* set filetype=sh
 
 " tipo por pasta
 "autocmd BufRead,BufNewFile ~/.remind/* set syntax=remind
