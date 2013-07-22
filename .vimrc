@@ -21,6 +21,14 @@ set laststatus=2
 set foldmethod=indent
 set autoindent
 set shiftround
+syntax on
+
+" OPTIONAL: this enables automatic indentation as you type.
+if has("autocmd")
+    filetype on
+    filetype plugin on
+    filetype indent on
+endif
 
 " buffers
 set switchbuf=useopen,split
@@ -30,22 +38,22 @@ set wildmenu
 set wildmode=list:longest,full
 
 " tabs aren't all that necessary
-set tabstop=4		" Espaces for tab
-set shiftwidth=4	" Espaces for each indent
+set tabstop=4       " Espaces for tab
+set shiftwidth=4    " Espaces for each indent
 set softtabstop=4
 " TODO function to exchange tabs for spaces
-set expandtab		" Substutes tab for spaces
-        			" Use CTRL-V <Tab> to put real Tabs
+set expandtab       " Substutes tab for spaces
+                    " Use CTRL-V <Tab> to put real Tabs
 autocmd Filetype make setlocal noexpandtab
-set smarttab		" use shiftwidth at beginning, tabstop in middle
-	        		" <BS> erases shiftwidth at start
+set smarttab        " use shiftwidth at beginning, tabstop in middle
+                    " <BS> erases shiftwidth at start
 
 " Search options
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set showcmd	    	" shows partial command
+set showcmd         " shows partial command
 set showmatch
 set gdefault
 
@@ -56,7 +64,6 @@ colorscheme koehler
 " buffers
 set hidden
 
-" undofile
 set undofile
 
 " show whitespace
@@ -73,8 +80,6 @@ map <F11> <Esc>:setlocal nospell<CR>
 
 imap jj <ESC>
 
-" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
-filetype plugin on
 set ofu=syntaxcomplete#Complete	"omnicompletion
 
 " IMPORTANT: grep will sometimes skip displaying the file name if you
@@ -90,10 +95,6 @@ map \w <Plug>CamelCaseMotion_w
 map \e <Plug>CamelCaseMotion_e
 map \b <Plug>CamelCaseMotion_b
 
-" OPTIONAL: this enables automatic indentation as you type.
-filetype plugin indent on
-syntax on
-
 " latex filetype fix
 let g:tex_flavor = "latex"
 
@@ -106,12 +107,10 @@ autocmd Filetype perl nnoremap <buffer> <leader>ll :!perl -c %<CR>
 
 " filetype
 autocmd BufRead,BufNewFile bash-fc-* set filetype=sh
+autocmd BufRead,BufNewFile .bash* set filetype=sh
 
 " tipo por pasta
 "autocmd BufRead,BufNewFile ~/.remind/* set syntax=remind
-
-" NERDTree
-map <F2> :NERDTreeToggle<CR>
 
 " LanguageTool
 let g:languagetool_jar='$HOME/.languagetool/LanguageTool.jar'
