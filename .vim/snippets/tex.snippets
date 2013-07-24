@@ -1,0 +1,36 @@
+#Personal
+#### Templates
+
+# default configuration
+snippet default
+	\usepackage[brazil]{babel}
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+	\usepackage{lmodern}
+
+# Article
+snippet article
+	\documentclass{article}
+
+	\title{${1}}
+	\author{${2}}
+	\date{${3}}
+
+	\begin{document}
+	${4}
+	\end{document}
+
+# Beamer
+snippet beamer
+	\documentclass{beamer}
+	\usetheme{${1:Warsaw}}
+	\usecolortheme{${2:whale}}
+
+	\title{${3}}
+	\author{${4}}
+	\date{${5}}
+
+	\begin{document}
+	\titlepage
+	${6}
+	\end{document} 
