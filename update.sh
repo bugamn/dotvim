@@ -3,6 +3,7 @@ root=.vim/bundle
 declare -A mercurial_repos
 mercurial_repos=(
 ["ropevim"]="https://bitbucket.org/agr/ropevim"
+["ropemode"]="https://bitbucket.org/agr/ropemode"
 )
 
 git submodule foreach git pull
