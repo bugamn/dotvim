@@ -7,7 +7,6 @@ mercurial_repos=(
 ["rope"]="https://bitbucket.org/agr/rope"
 )
 
-git submodule foreach git pull
 for repo in ${!mercurial_repos[@]}
 do
     if [ -e $root/$repo ]
