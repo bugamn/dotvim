@@ -4,6 +4,7 @@ declare -A mercurial_repos
 mercurial_repos=(
 ["ropevim"]="https://bitbucket.org/agr/ropevim"
 ["ropemode"]="https://bitbucket.org/agr/ropemode"
+["rope"]="https://bitbucket.org/agr/rope"
 )
 
 git submodule foreach git pull
@@ -16,7 +17,7 @@ do
         cd -
     else
         hg clone ${mercurial_repos["$repo"]} $root/$repo
-        echo $repo/ >> .gitignore
+        #echo $repo/ >> .gitignore
     fi
 done
 
