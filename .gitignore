@@ -1,1 +1,5 @@
 \.VimballRecord
+pylibs/
+ropevim/
+ropemode/
+rope/
