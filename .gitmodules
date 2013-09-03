@@ -22,9 +22,6 @@
 [submodule ".vim/bundle/latexBox"]
 	path = .vim/bundle/latexBox
 	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
-[submodule ".vim/bundle/snipMate"]
-	path = .vim/bundle/snipMate
-	url = git://github.com/garbas/vim-snipmate.git
 [submodule ".vim/bundle/addon-mw"]
 	path = .vim/bundle/addon-mw
 	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
