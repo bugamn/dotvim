@@ -5,3 +5,5 @@ let b:my_python_ftplugin = 1
 let $PYTHONPATH .= ":$HOME/.vim/pylibs/"
 
 source $HOME/.vim/bundle/ropevim/ropevim.vim
+
+set textwidth=80

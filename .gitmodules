@@ -22,15 +22,6 @@
 [submodule ".vim/bundle/latexBox"]
 	path = .vim/bundle/latexBox
 	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
-[submodule ".vim/bundle/snipMate"]
-	path = .vim/bundle/snipMate
-	url = git://github.com/garbas/vim-snipmate.git
-[submodule ".vim/bundle/addon-mw"]
-	path = .vim/bundle/addon-mw
-	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule ".vim/bundle/tlib"]
-	path = .vim/bundle/tlib
-	url = git://github.com/tomtom/tlib_vim.git
 [submodule ".vim/bundle/vim-snippets"]
 	path = .vim/bundle/vim-snippets
 	url = git://github.com/honza/vim-snippets.git
@@ -46,3 +37,9 @@
 [submodule ".vim/bundle/presenting"]
 	path = .vim/bundle/presenting
 	url = https://github.com/sotte/presenting.vim.git
+[submodule ".vim/bundle/ultisnips"]
+	path = .vim/bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips.git
+[submodule ".vim/bundle/vimoutliner"]
+	path = .vim/bundle/vimoutliner
+	url = git@github.com:vimoutliner/vimoutliner.git
