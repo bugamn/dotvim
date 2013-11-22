@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vimoutliner"]
 	path = .vim/bundle/vimoutliner
 	url = git@github.com:vimoutliner/vimoutliner.git
+[submodule ".vim/bundle/cookvim"]
+	path = .vim/bundle/cookvim
+	url = git@github.com:bugamn/cookvim.git

@@ -44,7 +44,6 @@ set softtabstop=4
 " TODO function to exchange tabs for spaces
 set expandtab       " Substutes tab for spaces
                     " Use CTRL-V <Tab> to put real Tabs
-autocmd Filetype make setlocal noexpandtab
 set smarttab        " use shiftwidth at beginning, tabstop in middle
                     " <BS> erases shiftwidth at start
 
@@ -79,6 +78,8 @@ map <F10> <Esc>:setlocal spell spelllang=en_us<CR>
 map <F11> <Esc>:setlocal nospell<CR>
 
 imap jj <ESC>
+
+map ç :noh<ENTER>
 
 set ofu=syntaxcomplete#Complete	"omnicompletion
 
