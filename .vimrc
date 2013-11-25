@@ -15,6 +15,7 @@ set ruler
 set relativenumber
 set title
 set cursorline
+set cursorcolumn
 set ttyfast
 set laststatus=2
 
