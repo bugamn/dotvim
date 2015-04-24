@@ -120,3 +120,7 @@ let g:languagetool_jar='$HOME/.languagetool/LanguageTool.jar'
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 
+" YouCompleteMe
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py', '!~/*']
