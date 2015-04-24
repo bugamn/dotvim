@@ -57,6 +57,10 @@ set showcmd         " shows partial command
 set showmatch
 set gdefault
 
+" Allow for per dir configurations
+set exrc
+set secure
+
 " color
 set t_Co=256
 colorscheme jellybeans
