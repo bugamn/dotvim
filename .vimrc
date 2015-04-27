@@ -59,7 +59,7 @@ set gdefault
 
 " color
 set t_Co=256
-colorscheme jellybeans
+colorscheme blackboard
 
 " buffers
 set hidden
